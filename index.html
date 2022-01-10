@@ -4,10 +4,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
         <title>Dojonary</title>
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        
+        <main class="main">
+            <header class="header">
+                <h1 class="header-h1">Dojonary</h1>
+                <input class="search" type="search" placeholder="Search" />
+                <button class="login-btn" onclick="changeValue(this)">Login</button>
+            </header>
+            <div class="container">
+                <div class="container-col">
+                    <div class="word-definition">
+                        <div class="word-definition-col">
+                            <h1>ninja</h1>
+                            <h3>noun</h3>
+                            <p>Plural: ninjas</p>
+                            <button class="likes-btn" onclick="alertMessage()">13 likes</button>
+                        </div>
+                        <div class="word-definition-col">
+                            <h3 class="word-definition-col-h3">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></h3>
+                        </div>
+                    </div>
+                    <div class="word-definition">
+                        <div class="word-definition-col">
+                            <h1>ninja</h1>
+                            <h3>noun</h3>
+                            <p>Plural: ninjas</p>
+                            <button class="likes-btn" onclick="alertMessage()">37 likes</button>
+                        </div>
+                        <div class="word-definition-col">
+                            <h3 class="word-definition-col-h3">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-col">
+                    <div class="add-definition">
+                        <div class="add-definition-col">
+                            <p>Dojonary is defined by <span>YOU</span></p>
+                            <button class="add-definition-btn" onclick="removeButton(this)">Add Definition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <script src="./js/index.js"></script>
     </body>
